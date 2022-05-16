@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>United States Unemployment 2001 to 2015</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+  
+</head>
+
+<body>
+  <h1>US and Puerto Rico Unemployment Rates : 2001 &ndash; 2015</h1>
+  <div id="map"></div>
+  <div id="ui-controls">
+    <label>
+      <span class="min">2001</span>
+      <span class="max">2015</span>
+      <input type="range" min="2001" max="2015" value="2001" step="1" class="year-slider">
+    </label>
+  </div>
+  <!-- Adding jQuery JS library -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <!-- Adding the Leaflet library -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!-- Adding the Papa Parse JS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js"
+    integrity="sha512-EbdJQSugx0nVWrtyK3JdQQ/03mS3Q1UiAhRtErbwl1YL/+e2hZdlIcSURxxh7WXHTzn83sjlh2rysACoJGfb6g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <!-- Adding the Chroma JS library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.2/chroma.min.js"
+    integrity="sha512-8TVPS0EFkkmtT6yPb5K4csnSt3tjbKRrs0F8gvTNKv2OxOcwDO7+Klkz86gMVrzfqtZos5N2a+k+r9D+hlccmQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <!-- Proj4js v2.8.0 script from https://cdnjs.com/libraries/proj4js/2.8.0 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.8.0/proj4.js"
+    integrity="sha512-ha3Is9IgbEyIInSb+4S6IlEwpimz00N5J/dVLQFKhePkZ/HywIbxLeEu5w+hRjVBpbujTogNyT311tluwemy9w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Proj4Leaflet v1.0.2 script from https://cdnjs.com/libraries/proj4leaflet -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.min.js"
+    integrity="sha512-GsAYl1wxzWW6azVpXkhyYfjMb2LbaOnlrqWMBdAk9xDcilinFvGMN+48Ajp/10u/9lcnh8YyS2CYNgung7ewHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

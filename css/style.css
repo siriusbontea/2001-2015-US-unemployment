@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(63, 63, 63);
+    font-family: Lato, sans-serif;
+    color: #0d0000;
+}
+
+h1 {
+    position: absolute;
+    z-index: 650;
+    top: 10px;
+    left: 15px;
+    padding: 8px 15px;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 1.5em;
+    background: rgba(25, 25, 25, 0.8);
+    border-radius: 5px;
+}
+
+h2 {
+    display: inline-block;
+    color: #001323;
+}
+
+#map {
+    position: absolute;
+    background: rgb(77, 77, 77);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.legend {
+    padding: 6px 8px;
+    font-size: 1em;
+    background: rgba(25, 25, 25, 0.8);
+    color: whitesmoke;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 160px;
+}
+
+.legend h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1em;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.legend h3 span {
+    font-size: 1.3em;
+    margin: 0 20px 0 0;
+}
+
+.legend ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 12px 4px 0;
+}
+
+.legend li {
+    list-style-type: none;
+    height: 22px;
+}
+
+.legend span {
+    width: 30px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+}
+
+#ui-controls {
+    width: 176px;
+    padding: 8px 25px 8px 15px;
+    background: rgba(25, 25, 25, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: whitesmoke;
+}
+
+#ui-controls .min {
+    float: left;
+}
+
+#ui-controls .max {
+    float: right;
+    margin-right: -15px;
+}
+
+.year-slider {
+    width: 100%;
+}
+
+label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+footer {
+    padding: 6px 10%;
+    width: 80%;
+}
+
+p {
+    font-size: 1em;
+    color: #001323;
+}
