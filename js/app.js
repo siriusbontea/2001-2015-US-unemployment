@@ -19,7 +19,7 @@ const myData = {
         zoom: .4,
         maxBounds: [
             [10, -170],
-            [0, 0]
+            [-30, 50]
         ],
         maxBoundsViscosity: .2,
 
